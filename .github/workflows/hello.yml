@@ -12,3 +12,6 @@ jobs:
     steps:
       - name: hello
         run: echo " hello $USER "
+        
+      - name: say hello to user
+        run: echo " Hello pramod i am runner "
