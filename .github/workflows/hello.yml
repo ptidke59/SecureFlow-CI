@@ -16,10 +16,10 @@ jobs:
       - name: say hello to user
         run: echo " Hello pramod i am runner "
 
-    details:
+  details:
 
-      runs-on: ubuntu-latest
-      steps:
-        - name: version of python, docker, etc
-          run: docker --version && python --version
+    runs-on: ubuntu-latest
+    steps:
+      - name: version of python, docker, etc
+        run: docker --version && python --version
 
