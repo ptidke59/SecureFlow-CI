@@ -1,12 +1,14 @@
 ---
 name: Hello
+
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  
 jobs:
   greet:
+  
     runs-on: ubuntu-latest
     steps:
-      -name: say hello
-      run: echo 'hello $USER'
+      - name: hello
+        run: echo " hello $USER "
