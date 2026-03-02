@@ -30,6 +30,8 @@ jobs:
       # static code artifact upload to github pages
       - name: upload static files
         uses: actions/upload-pages-artifact@v4
+        with:
+          path: "."
 
       # git hub pages deploy action to deploy the portfolio
       - name: deploy to github pages
