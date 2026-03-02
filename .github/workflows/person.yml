@@ -1,0 +1,15 @@
+---
+name: personal information
+on:
+  workflow-branches:
+jobs:
+  details:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: My name
+        run: echo "Pramod Tidke"
+      - name: experience
+        run: echo "2 year of experience"
+      - name: role is
+        run: echo "software engineer"
