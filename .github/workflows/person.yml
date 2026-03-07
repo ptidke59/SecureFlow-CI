@@ -18,8 +18,7 @@ jobs:
 
       - name: tools
         run: echo "github, docker, python, ansible"
-      - name: hobbies
-        hobbies: ["coding", "music", "gaming"]
-        run: echo "coding, music, gaming"
-        env:
-          HOBBIES: ["coding", "music", "gaming"]
+      - name: cloud
+        run: echo "aws, azure, gcp"
+      - name: os
+        run: echo "linux, windows"
