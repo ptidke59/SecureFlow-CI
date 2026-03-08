@@ -3,92 +3,323 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevOps Zero To Hero</title>
+
+    <title>Pawan Thirukay | Digital Entrepreneur</title>
+
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
       }
+
       body {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-        font-family:
-          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-          Arial, sans-serif;
-        color: #e0e0e0;
+        background: #0f172a;
+        color: white;
+        line-height: 1.6;
       }
+
       .container {
-        text-align: center;
-        padding: 2rem;
-        max-width: 640px;
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
       }
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-        background: linear-gradient(90deg, #00d2ff, #7b2ff7);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+
+      header {
+        background: #020617;
+        padding: 20px 0;
+        border-bottom: 1px solid #1e293b;
       }
-      .badge {
-        display: inline-block;
-        margin: 1rem 0 2rem;
-        padding: 0.4rem 1.2rem;
-        border: 1px solid #7b2ff7;
-        border-radius: 999px;
-        font-size: 0.9rem;
-        color: #c4b5fd;
-        letter-spacing: 0.05em;
-      }
-      .cards {
+
+      nav {
         display: flex;
-        gap: 1rem;
-        justify-content: center;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
       }
+
+      nav h1 {
+        color: #38bdf8;
+        font-size: 24px;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+      }
+
+      .hero {
+        padding: 100px 0;
+        text-align: center;
+      }
+
+      .hero h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+
+      .hero span {
+        color: #38bdf8;
+      }
+
+      .hero p {
+        max-width: 700px;
+        margin: auto;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        padding: 12px 25px;
+        background: #38bdf8;
+        color: black;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      section {
+        padding: 80px 0;
+        border-bottom: 1px solid #1e293b;
+      }
+
+      section h2 {
+        margin-bottom: 30px;
+        font-size: 28px;
+        color: #38bdf8;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+
       .card {
-        background: rgba(255, 255, 255, 0.06);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 12px;
-        padding: 1.5rem 1.8rem;
-        min-width: 150px;
-        flex: 1;
+        background: #020617;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #1e293b;
       }
-      .card span {
-        display: block;
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        color: #9ca3af;
-        margin-bottom: 0.4rem;
-      }
-      .card strong {
-        font-size: 1.25rem;
-        color: #f9fafb;
+
+      footer {
+        text-align: center;
+        padding: 30px;
+        font-size: 14px;
+        color: #94a3b8;
       }
     </style>
   </head>
+
   <body>
-    <div class="container">
-      <h1>DevOps Zero To Hero</h1>
-      <div class="badge">Josh Batch 10</div>
-      <div class="cards">
-        <div class="card">
-          <span>Framework</span>
-          <strong>Flask 3.1</strong>
-        </div>
-        <div class="card">
-          <span>Runtime</span>
-          <strong>Python 3.14</strong>
-        </div>
-        <div class="card">
-          <span>Deploy</span>
-          <strong>AWS ECS</strong>
+    <header>
+      <div class="container">
+        <nav>
+          <h1>Pawan Thirukay</h1>
+
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2>
+          Building My Life Through
+          <span>Entrepreneurship, Learning & Discipline</span>
+        </h2>
+
+        <p>
+          I am Pawan Thirukay, a digital entrepreneur from India. My journey is
+          about transforming myself through business, communication mastery,
+          coding, and discipline. I run a marketing agency helping businesses
+          generate leads using digital marketing.
+        </p>
+
+        <a class="btn" href="#contact">Work With Me</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+
+        <p>
+          I am a digital marketer and entrepreneur currently building my
+          marketing agency Digitomotive. My goal is to create financial
+          independence through skills, discipline, and long-term thinking.
+        </p>
+
+        <br />
+
+        <p>
+          I left my engineering job in 2023 to pursue entrepreneurship. Since
+          then my focus has been:
+        </p>
+
+        <ul>
+          <li>Building a digital marketing agency</li>
+          <li>Learning coding and automation</li>
+          <li>Improving communication and public speaking</li>
+          <li>Developing discipline and strong personal systems</li>
+          <li>Creating content around entrepreneurship</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>
+              Facebook Ads, Meta Ads, YouTube Ads, lead generation strategies.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Website Development</h3>
+            <p>Creating business websites for lead generation and branding.</p>
+          </div>
+
+          <div class="card">
+            <h3>Agency Operations</h3>
+            <p>
+              Client outreach, offer creation, funnel strategy and digital
+              campaigns.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Communication Development</h3>
+            <p>
+              Actively practicing communication through daily speaking and
+              presentations.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Coding & Automation</h3>
+            <p>
+              Learning programming to build automation systems and technical
+              leverage.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Content Creation</h3>
+            <p>
+              Creating content around entrepreneurship, business, and personal
+              growth.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Digitomotive</h3>
+            <p>
+              Digital marketing agency focused on lead generation using Meta Ads
+              and digital funnels.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>DG2Motive</h3>
+            <p>
+              Marketing agency targeting international clients, especially in
+              solar and home improvement niches.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>InsideAI Blog</h3>
+            <p>
+              A blog platform focused on artificial intelligence insights and
+              technology education.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Papernotes</h3>
+            <p>
+              A digital product platform designed to sell knowledge products and
+              educational materials.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="philosophy">
+      <div class="container">
+        <h2>Personal Philosophy</h2>
+
+        <p>
+          I believe success comes from discipline, self-respect, and long-term
+          thinking. My focus is to build systems instead of chasing motivation.
+        </p>
+
+        <br />
+
+        <p>Principles I follow:</p>
+
+        <ul>
+          <li>Everything happens for a reason</li>
+          <li>Growth requires sacrifice</li>
+          <li>Focus on long-term games</li>
+          <li>Build leverage through skills and ownership</li>
+          <li>Develop strong communication and judgment</li>
+        </ul>
+
+        <br />
+
+        <p>
+          My inspiration comes from entrepreneurs like Gary Vaynerchuk, Neil
+          Patel and Alex Hormozi.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+
+        <p>
+          If you want to work together, collaborate, or discuss ideas feel free
+          to connect.
+        </p>
+
+        <br />
+
+        <p>Email: your@email.com</p>
+        <p>LinkedIn: linkedin.com</p>
+        <p>Instagram: instagram.com</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Pawan Thirukay | Digital Entrepreneur</p>
+    </footer>
   </body>
 </html>
