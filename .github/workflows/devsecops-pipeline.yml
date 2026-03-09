@@ -4,6 +4,7 @@ on:
   push:
     branches: ["main"]
 jobs:
+  #CI pipeline with code quality check, secret scan, dependency scan, docker lint and docker build and push to registry
   Code-Quality-Check:
     uses: ./.github/workflows/code-quality.yml
 
@@ -15,3 +16,8 @@ jobs:
 
   docker-scan:
     uses: ./.github/workflows/docker-lint.yml
+
+  build-and-push:
+    needs: [Code-Quality-Check, secret-scan, dependency-scan, docker-scan]
+    uses: ./.github/workflows/docker-build-push.yml
+    secrets: inherit
