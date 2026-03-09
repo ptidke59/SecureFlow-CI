@@ -1,8 +1,7 @@
 name: DevSecOps Pipeline end to end
 
 on:
-  push:
-    branches: ["main"]
+  workflow_dispatch:
 jobs:
   #CI pipeline with code quality check, secret scan, dependency scan, docker lint and docker build and push to registry
   Code-Quality-Check:
