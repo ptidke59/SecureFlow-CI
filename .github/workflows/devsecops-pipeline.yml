@@ -1,7 +1,8 @@
 name: DevSecOps Pipeline end to end
 
 on:
-  workflow_dispatch:
+  push:
+    branches: ["main"]
 jobs:
   Code-Quality-Check:
     uses: ./.github/workflows/code-quality.yml
