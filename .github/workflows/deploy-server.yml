@@ -20,4 +20,5 @@ jobs:
             echo "Deploying server..."
             mkdir devops
             touch devops/deploy.txt
+            touch devops/deploy2.txt
             # Add your deployment commands here, for example:
