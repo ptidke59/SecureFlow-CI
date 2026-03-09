@@ -1,0 +1,22 @@
+#this will deploy the server to the server machine using ssh and scp
+
+name: Deploy Server
+
+on:
+  workflow_call:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ssh to prod server
+        uses: appleboy/ssh-action@v1.0.3 # Check the GitHub Marketplace for the latest version
+        with:
+          host: ${{ secrets.EC2_SSH_HOST }}
+          username: ${{ secrets.EC2_SSH_USER }}
+          key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+          script: |
+            echo "Deploying server..."
+            mkdir devops
+            # Add your deployment commands here, for example:
